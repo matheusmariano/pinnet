@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl';
 import './styles.scss';
@@ -22,39 +21,20 @@ class HomeScene extends Component {
 
   render() {
     return (
-      <div>
-        <section styleName="hero">
-          <h1
-            className="display-1"
-            styleName="hero__title"
-          >
-            <FormattedMessage id="home.title" />
-          </h1>
-          <h2
-            className="display-4"
-            styleName="hero__subtitle"
-          >
-            <FormattedMessage id="home.description" />
-          </h2>
-        </section>
-      </div>
+      <section className="container-fluid">
+        <div className="row">
+          <div className="col">
+            <h1 className="display-1">
+              <FormattedMessage id="home.title" />
+            </h1>
+            <p className="lead">
+              <FormattedMessage id="home.description" />
+            </p>
+          </div>
+        </div>
+      </section>
     );
   }
 }
 
-HomeScene.propTypes = {
-};
-
-function mapStateToProps() {
-  return {
-  };
-}
-
-function mapDispatchToProps() {
-  return {
-  };
-}
-
-export default withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(HomeScene),
-);
+export default withRouter(HomeScene);
