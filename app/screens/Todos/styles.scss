@@ -1,0 +1,12 @@
+@import '../../styles/settings';
+
+.todos-page {
+  &__title {
+    color: $text-color-inverse;
+  }
+
+  &__component {
+    display: flex;
+    justify-content: center;
+  }
+}
