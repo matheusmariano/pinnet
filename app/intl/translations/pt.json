@@ -1,7 +1,28 @@
 {
+  "general": {
+    "brand": "Pinnet"
+  },
   "home": {
-    "page_title": "React Fission",
-    "title": "Olá, React!",
-    "description": "Você está pronto para criar seu projeto incrível."
+    "page_title": "Pinnet",
+    "hero": {
+      "title": "Compartilhe fotos e vídeos com seus amigos."
+    },
+    "main_menu": {
+      "sign_in": "Acessar"
+    },
+    "sign_up": {
+      "title": "Cadastre-se",
+      "email": {
+        "placeholder": "E-mail"
+      },
+      "password": {
+        "placeholder": "Senha",
+        "error": "Sua senha deve conter pelo menos 8 caracteres, incluindo letras maiúsculas e minúsculas, números e caracteres especiais."
+      },
+      "action": "Criar Conta"
+    },
+    "footer": {
+      "message": "Feito com 💪 por {author}"
+    }
   }
 }
